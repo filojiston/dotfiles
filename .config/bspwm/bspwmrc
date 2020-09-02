@@ -1,0 +1,23 @@
+#! /bin/sh
+
+setxkbmap tr
+sxhkd &
+~/scripts/dual_monitor
+nitrogen --restore &
+picom -b
+pgrep bspswallow || bspswallow &
+~/.config/polybar/launch.sh
+udiskie &
+
+bspc monitor HDMI-0 -d I II III
+bspc monitor eDP-1-1 -d IV V VI 
+
+bspc config window_gap          10
+
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config border_width 0
+
+bspc rule -a discord desktop=IV 
+bspc rule -a code-oss desktop=III
+bspc rule -a firefox desktop=II

@@ -1,0 +1,25 @@
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+[bar/external]
+background = ${colors.background}
+foreground = ${colors.foreground}
+bottom = false
+fixed-center = true
+
+wm-restack = bspwm
+
+font-0 = "JetBrains Mono NL:style=Bold:antialias=true:size=8"
+font-1 = "Font Awesome 5 Free Regular:style=regular:antialias=true:size=10"
+font-2 = "Font Awesome 5 Free Solid:style=solid:antialias=true:size=10"
+font-3 = "Font Awesome 5 Brands Regular:style=regular:antialias=true:size=10"
+
+modules-left = bspwm
+modules-center = spotify 
+modules-right = alsa battery network updates temperature cpu memory filesystem
+module-margin-right = 1
