@@ -1,0 +1,8 @@
+require('packer-init')
+require('core/options')
+require('core/keymaps')
+require('plugins/nvim-cmp')
+require('plugins/telescope')
+require('plugins/treesitter')
+require('plugins/null-ls')
+require('plugins/mason')
