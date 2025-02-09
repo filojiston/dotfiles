@@ -11,5 +11,6 @@ antigen theme spaceship-prompt/spaceship-prompt
 
 antigen apply
 
+source ~/.zsh_exports
 source ~/.zsh_aliases
 source ~/.zsh_functions
